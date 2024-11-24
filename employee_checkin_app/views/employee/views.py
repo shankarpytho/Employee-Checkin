@@ -25,7 +25,7 @@ class EmployeeOnlyView(APIView):
         checkins = CheckinDetails.objects.filter(
             employee=employee_id
         )
-        if user.id == user_id:
+        if user.username == get_user_name:
             serializer = CheckOutDetailsSerializer(checkins, many=True)
             return Response(serializer.data, status=status.HTTP_200_OK)
         else:

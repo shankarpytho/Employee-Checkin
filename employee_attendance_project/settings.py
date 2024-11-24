@@ -77,7 +77,7 @@ AUTH_USER_MODEL = 'employee_checkin_app.CustomUser'
 from datetime import timedelta
 
 SIMPLE_JWT = {
-    'ACCESS_TOKEN_LIFETIME': timedelta(minutes=15),
+    'ACCESS_TOKEN_LIFETIME': timedelta(minutes=240),
     'REFRESH_TOKEN_LIFETIME': timedelta(days=1),
 }
 TEMPLATES = [
