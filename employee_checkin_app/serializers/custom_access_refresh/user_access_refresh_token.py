@@ -25,6 +25,7 @@ class CustomTokenSerializer(serializers.Serializer):
                 'id': user.id,
                 'username': user.username,
                 'email': user.email,
+                'role':user.role
             },
             "user_token":{
                 'refresh': str(refresh),

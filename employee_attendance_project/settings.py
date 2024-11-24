@@ -27,7 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 # Application definition
 DEBUG = True
 INSTALLED_APPS = [
@@ -65,6 +65,12 @@ REST_FRAMEWORK = {
     ),
 
 }
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = 'ksrilathait@gmail.com'
+EMAIL_HOST_PASSWORD = 'Pissu@123'
 TIME_ZONE = 'Asia/Kolkata'  # Sets IST
 USE_TZ = True     
 AUTH_USER_MODEL = 'employee_checkin_app.CustomUser'
