@@ -65,14 +65,14 @@ REST_FRAMEWORK = {
     ),
 
 }
+# settings.py
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST = 'smtp.gmail.com'  # Or any other SMTP server
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-EMAIL_HOST_USER = 'ksrilathait@gmail.com'
-EMAIL_HOST_PASSWORD = 'Pissu@123'
-TIME_ZONE = 'Asia/Kolkata'  # Sets IST
-USE_TZ = True     
+EMAIL_HOST_USER = 'gowrigvenkat5@gmail.com'
+EMAIL_HOST_PASSWORD = 'iyxd jtoo pwca lldm'
+
 AUTH_USER_MODEL = 'employee_checkin_app.CustomUser'
 from datetime import timedelta
 
@@ -83,7 +83,7 @@ SIMPLE_JWT = {
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR / 'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
